@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include("./bit_html/head.html", {
+    "title": "Portfolio",
+    "styles": "./css/style.min.css"
+})
+<body>
+    <div class="container">
+        @@include('./bit_html/header.html',{})
+
+        <div class="main section">
+
+            <!-- Content Section -->
+            <div class="section__content">
+                <div class="caption">
+                    <span class="line"></span>
+                    <p>UI/UX Designer & Developer</p>
+                </div>
+                <h1 class="section__content__title">We'e Creative <br/>& Minimalist</h1>
+                <p class="section__content__sub_title">Hi, I'm Sinthi. I'm UI/UX Designer. If you are looking for Designer to build your brands and grow your business Let's shake hands with me.</p>
+                <a href="#" class="section__content__btn">
+                    <div class="arrow">
+                        <img src="./images/arrow_white.svg" alt="arrow">
+                    </div>
+                    <p>Hire Me Now</p>
+                </a>
+                <p class="small_caption">We proudly working with Microsoft</p>
+            </div>
+
+            <!-- Image Section -->
+            <div class="section__img">
+                <img src="./images/illustration/illustration.svg" alt="img">
+                <div class="section__img__content">
+                    <div class="caption">
+                        <span class="line"></span>
+                        <p>Our Projects</p>
+                    </div>
+                        <h1 class="section__img__title">Portfolio Landing UI</h1>
+                        <p class="section__img__sub_title">Microsoft</p>
+                        <a href="#" class="section__img__link">Explore Now</a>
+                </div>
+            </div>
+        </div>
+        
+        @@include('./bit_html/footer.html',{})
+    </div>
+    <script src="./js/main.min.js"></script>
+</body>
+</html>
