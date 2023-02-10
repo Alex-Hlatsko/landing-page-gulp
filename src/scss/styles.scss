@@ -299,3 +299,65 @@ header{
         background-color: #FFFEFE;
     }
 }
+
+.growth{
+    padding: 2rem 0.8rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    .education{
+        width: 48%;
+        &__title{
+            color: $black;
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+        }
+        &__item{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid $gray;
+            &__text{
+                .sub_title{
+                    margin-top: 0.4rem;
+                    margin-bottom: 1.4rem;
+                }
+            }
+        }
+        &__item:last-child{
+            border-bottom: 0;
+        }
+    }
+    .experience{
+        width: 48%;
+        &__title{
+            color: $black;
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+        }
+        &__item{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid $gray;
+            &__content{
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 1rem;
+                }
+                .experience__item__text{
+                    .sub_title{
+                        margin-top: 0.4rem;
+                        margin-bottom: 1.4rem;
+                    }
+                }
+            }
+        }
+        &__item:last-child{
+            border-bottom: 0;
+        }
+    }
+}

@@ -191,6 +191,20 @@ span.line {
   div.services__items .services__item {
     width: 80%;
   }
+
+  div.growth {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  div.growth .education {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  div.growth .experience {
+    width: 100%;
+    margin-top: 2rem;
+  }
 }
 @media only screen and (max-width: 530px) {
   div.main.section .section__content .section__content__title {
@@ -506,4 +520,62 @@ header.active nav ul li {
   position: absolute;
   bottom: -3rem;
   background-color: #FFFEFE;
+}
+
+.growth {
+  padding: 2rem 0.8rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.growth .education {
+  width: 48%;
+}
+.growth .education__title {
+  color: #1B1C23;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+.growth .education__item {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #757683;
+}
+.growth .education__item__text .sub_title {
+  margin-top: 0.4rem;
+  margin-bottom: 1.4rem;
+}
+.growth .education__item:last-child {
+  border-bottom: 0;
+}
+.growth .experience {
+  width: 48%;
+}
+.growth .experience__title {
+  color: #1B1C23;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+.growth .experience__item {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #757683;
+}
+.growth .experience__item__content {
+  display: flex;
+  align-items: center;
+}
+.growth .experience__item__content img {
+  margin-right: 1rem;
+}
+.growth .experience__item__content .experience__item__text .sub_title {
+  margin-top: 0.4rem;
+  margin-bottom: 1.4rem;
+}
+.growth .experience__item:last-child {
+  border-bottom: 0;
 }
