@@ -63,10 +63,12 @@ button,
 textarea,
 select {
   font: inherit;
+  border: 0;
 }
 
 a {
   text-decoration: none;
+  color: #757683;
 }
 
 body {
@@ -90,6 +92,30 @@ span.line {
   display: flex;
   align-items: center;
   text-transform: uppercase;
+}
+
+.title {
+  font-family: "THICCCBOI Bold";
+  font-size: 1.5rem;
+  color: #1B1C23;
+}
+
+.sub_title {
+  font-family: "THICCCBOI Medium";
+  line-height: 1.3rem;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.2rem;
+  background-color: #FF694B;
+  border-radius: 0.1rem;
+  color: #FFFFFF;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: 0 0 0.8rem #FF694B;
 }
 
 @media only screen and (max-width: 700px) {
@@ -118,6 +144,29 @@ span.line {
   div.main.section .section__img img {
     width: 70%;
   }
+
+  div.promises {
+    flex-direction: column;
+  }
+  div.promises .promises__content {
+    margin-top: 3rem;
+  }
+  div.promises .promises__content .promises__data {
+    width: 100%;
+    justify-content: space-around;
+  }
+  div.promises .promises__img {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  div.promises .promises__content {
+    width: 100%;
+  }
+
+  div.services__items .services__item {
+    width: 40%;
+  }
 }
 @media only screen and (max-width: 800px) {
   div.portfolio {
@@ -133,6 +182,14 @@ span.line {
   div.portfolio__project:last-child {
     margin-left: 0;
     margin-top: 1.2rem;
+  }
+
+  div.promises .promises__img {
+    width: 60%;
+  }
+
+  div.services__items .services__item {
+    width: 80%;
   }
 }
 @media only screen and (max-width: 530px) {
@@ -150,6 +207,19 @@ span.line {
     position: relative;
     z-index: 10;
     bottom: 0;
+  }
+
+  div.promises .promises__content .promises__title {
+    margin-bottom: 0;
+  }
+  div.promises .promises__content .promises__items {
+    flex-direction: column;
+  }
+  div.promises .promises__content .promises__items .promises__item {
+    margin-top: 2.4rem;
+  }
+  div.promises .promises__content .promises__data .promises__data__item .data__item__number p {
+    font-size: 1.4rem;
   }
 }
 header {
@@ -171,17 +241,6 @@ header nav ul .nav__items a {
 }
 header nav ul .nav__items a:hover {
   color: #FF694B;
-}
-header .header__btn {
-  padding: 0.8rem 1.2rem;
-  background-color: #FF694B;
-  border-radius: 0.1rem;
-  color: #FFFFFF;
-  transition: 0.2s;
-  cursor: pointer;
-}
-header .header__btn:hover {
-  box-shadow: 0 0 0.8rem #FF694B;
 }
 header .burger_menu {
   width: 32px;
@@ -341,4 +400,110 @@ header.active nav ul li {
 .portfolio__project:last-child {
   background-color: #F3F1FA;
   margin-left: 0.4rem;
+}
+
+.promises {
+  padding: 2rem 0.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.promises .promises__img {
+  width: 35%;
+}
+.promises .promises__content {
+  width: 60%;
+}
+.promises .promises__content .promises__title {
+  font-family: "THICCCBOI Bold";
+  color: #1B1C23;
+  margin-bottom: 2rem;
+}
+.promises .promises__content .promises__items {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.promises .promises__content .promises__items .promises__item {
+  display: flex;
+}
+.promises .promises__content .promises__items .promises__item__number {
+  margin-right: 1rem;
+}
+.promises .promises__content .promises__items .promises__item__number span {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: #FF694B;
+  color: #FFFFFF;
+}
+.promises .promises__content .promises__items .promises__item__content .sub_title {
+  margin-top: 0.8rem;
+}
+.promises .promises__content .promises__data {
+  padding-top: 1rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.promises .promises__content .promises__data .promises__data__item {
+  display: flex;
+  align-items: center;
+}
+.promises .promises__content .promises__data .promises__data__item .data__item__number {
+  margin-right: 0.8rem;
+}
+.promises .promises__content .promises__data .promises__data__item .data__item__number p {
+  font-family: "THICCCBOI Bold";
+  font-size: 2rem;
+  color: #1B1C23;
+}
+
+.services {
+  padding: 2rem 0;
+  position: relative;
+  width: 100%;
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services__title {
+  color: #1B1C23;
+  margin-bottom: 1rem;
+}
+.services__items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.services__items .services__item {
+  margin: 0.8rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  width: 30%;
+}
+.services__items .services__item__title {
+  display: flex;
+  align-items: center;
+}
+.services__items .services__item__title img {
+  margin-right: 1.2em;
+}
+.services__items .services__item__content p {
+  width: 75%;
+  margin-top: 1.4rem;
+  margin-bottom: 2.6rem;
+}
+.services__btn {
+  padding: 1rem;
+  position: absolute;
+  bottom: -3rem;
+  background-color: #FFFEFE;
 }

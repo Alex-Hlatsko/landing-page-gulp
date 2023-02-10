@@ -19,3 +19,27 @@ span.line{
     align-items: center;
     text-transform: uppercase;
 }
+
+.title{
+    font-family: "THICCCBOI Bold";
+    font-size: 1.5rem;
+    color: $black;
+}
+
+.sub_title{
+    font-family: "THICCCBOI Medium";
+    line-height: 1.3rem;
+    font-size: 1rem;
+}
+
+.btn{
+    padding: 0.8rem 1.2rem;
+    background-color: $orange;
+    border-radius: 0.1rem;
+    color: $white;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0 0 0.8rem $orange;
+    }
+}

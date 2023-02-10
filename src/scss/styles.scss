@@ -25,17 +25,6 @@ header{
             }
         }
     }
-    .header__btn{
-        padding: 0.8rem 1.2rem;
-        background-color: $orange;
-        border-radius: 0.1rem;
-        color: $white;
-        transition: 0.2s;
-        cursor: pointer;
-        &:hover{
-            box-shadow: 0 0 0.8rem $orange;
-        }
-    }
     .burger_menu{
         width: 32px;
         height: 32px;
@@ -198,5 +187,115 @@ header{
     &__project:last-child{
         background-color: #F3F1FA;
         margin-left: 0.4rem;
+    }
+}
+
+.promises{
+    padding: 2rem 0.8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .promises__img{
+        width: 35%;
+    }
+    .promises__content{
+        width: 60%;
+        .promises__title{
+            font-family: "THICCCBOI Bold";
+            color: $black;
+            margin-bottom: 2rem;
+        }
+        .promises__items{
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            .promises__item{
+                display: flex;
+                &__number{
+                    margin-right: 1rem;
+                    span{
+                        display: block;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 2rem;
+                        height: 2rem;
+                        background-color: $orange;
+                        color: $white;
+                    }
+                }
+                &__content{
+                    .sub_title{
+                        margin-top: 0.8rem;
+                    }
+                }
+            }
+        }
+        .promises__data{
+            padding-top: 1rem;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .promises__data__item{
+                display: flex;
+                align-items: center;
+                .data__item__number{
+                    margin-right: 0.8rem;
+                    p{
+                        font-family: "THICCCBOI Bold";
+                        font-size: 2rem;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.services{
+    padding: 2rem 0;
+    position: relative;
+    width: 100%;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        color: $black;
+        margin-bottom: 1rem;
+    }
+    &__items{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .services__item{
+            margin: 0.8rem;
+            padding: 2rem;
+            background-color: #ffffff;
+            width: 30%;
+            &__title{
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 1.2em;
+                }
+            }
+            &__content{
+                p{
+                    width: 75%;
+                    margin-top: 1.4rem;
+                    margin-bottom: 2.6rem;
+                }
+            }
+        }
+    }
+    &__btn{
+        padding: 1rem;
+        position: absolute;
+        bottom: -3rem;
+        background-color: #FFFEFE;
     }
 }
