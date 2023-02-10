@@ -126,7 +126,7 @@ header{
             }
         }
         .small_caption{
-            margin-top: 3.6rem;
+            margin-top: 6rem;
             padding-top: 1.4rem;
             border-top: 1px solid $gray;
             font-size: 0.8rem;
@@ -165,5 +165,38 @@ header{
                 text-decoration: underline;
             }
         }
+    }
+}
+
+.portfolio{
+    padding: 2rem 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    &__project{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        .project__content{
+            width: 90%;
+            .portfolio__sub_title{
+                font-size: 0.8rem;
+            }
+            .portfolio__title{
+                font-family: 'THICCCBOI Semi-Bold';
+                color: $black;
+                margin-top: 1rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    &__project:first-child{
+        background-color: #FDF5EF;
+        margin-right: 0.4rem;
+    }
+    &__project:last-child{
+        background-color: #F3F1FA;
+        margin-left: 0.4rem;
     }
 }

@@ -119,6 +119,22 @@ span.line {
     width: 70%;
   }
 }
+@media only screen and (max-width: 800px) {
+  div.portfolio {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.portfolio__project {
+    width: 100%;
+  }
+  div.portfolio__project:first-child {
+    margin-right: 0;
+  }
+  div.portfolio__project:last-child {
+    margin-left: 0;
+    margin-top: 1.2rem;
+  }
+}
 @media only screen and (max-width: 530px) {
   div.main.section .section__content .section__content__title {
     font-size: 2.4rem;
@@ -256,7 +272,7 @@ header.active nav ul li {
   color: #FF694B;
 }
 .main.section .section__content .small_caption {
-  margin-top: 3.6rem;
+  margin-top: 6rem;
   padding-top: 1.4rem;
   border-top: 1px solid #757683;
   font-size: 0.8rem;
@@ -292,4 +308,37 @@ header.active nav ul li {
 .main.section .section__img .section__img__content .section__img__link {
   color: #FF694B;
   text-decoration: underline;
+}
+
+.portfolio {
+  padding: 2rem 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio__project {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.portfolio__project .project__content {
+  width: 90%;
+}
+.portfolio__project .project__content .portfolio__sub_title {
+  font-size: 0.8rem;
+}
+.portfolio__project .project__content .portfolio__title {
+  font-family: "THICCCBOI Semi-Bold";
+  color: #1B1C23;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.portfolio__project:first-child {
+  background-color: #FDF5EF;
+  margin-right: 0.4rem;
+}
+.portfolio__project:last-child {
+  background-color: #F3F1FA;
+  margin-left: 0.4rem;
 }
