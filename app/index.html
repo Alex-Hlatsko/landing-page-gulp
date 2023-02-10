@@ -8,6 +8,7 @@
     <title>Portfolio</title>
     <!-- Links -->
     <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
     <div class="container">
@@ -17,11 +18,11 @@
     </div>
     <nav>
         <ul>
-            <li class="nav__items"><a href="#">Start</a></li>
-            <li class="nav__items"><a href="#">Services</a></li>
-            <li class="nav__items"><a href="#">Portfolio</a></li>
-            <li class="nav__items"><a href="#">News</a></li>
-            <li class="nav__items"><a href="#">Contact</a></li>
+            <li class="nav__items"><a href="#home" onclick="closeMenu()">Start</a></li>
+            <li class="nav__items"><a href="#services" onclick="closeMenu()">Services</a></li>
+            <li class="nav__items"><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+            <li class="nav__items"><a href="#blog" onclick="closeMenu()">News</a></li>
+            <li class="nav__items"><a href="#contact" onclick="closeMenu()">Contact</a></li>
         </ul>
     </nav>
     <button class="btn">Book A Call</button>
@@ -30,7 +31,7 @@
 
         <!-- Main Section -->
 
-        <div class="main section">
+        <div class="main section" id="home">
             <!-- Content Section -->
             <div class="section__content">
                 <div class="caption">
@@ -63,7 +64,7 @@
         </div>
 
         <!-- Portfolio -->
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio">
             <!-- Project #1 -->
             <div class="portfolio__project">
                 <div class="project__content">
@@ -162,7 +163,7 @@
         </div>
 
         <!-- Services -->
-        <div class="services">
+        <div class="services" id="services">
             <h1 class="services__title">Our Services</h1>
             <div class="services__items">
                 <!-- Services Item #1 -->
@@ -325,8 +326,119 @@
             </div>
         </div>
 
-        <footer></footer>
+        <!-- Slider Reviews -->
+        <div class="reviews">
+            <img src="./images/Union.svg" alt="union">
+            <div class="single-item">
+                <!-- Review #1 -->
+                <div class="review">
+                    <h1 class="review__name">John Frankin</h1>
+                    <p class="review__position">UI/UX Designer</p>
+                    <p class="review__sub_title">“Sinthi has helped our business deliver incredible results, leading success for our UI & UX
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper, sapien sit amet scelerisque laoreet, eros justo congue neque”</p>
+                </div>
+                <!-- Review #2 -->
+                <div class="review">
+                    <h1 class="review__name">Nike Alone</h1>
+                    <p class="review__position">Manager</p>
+                    <p class="review__sub_title">“Sinthi has helped our business deliver incredible results, leading success for our UI & UX
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper, sapien sit amet scelerisque laoreet, eros justo congue neque”</p>
+                </div>
+                <!-- Review #3 -->
+                <div class="review">
+                    <h1 class="review__name">Kebap Sencle</h1>
+                    <p class="review__position">Frontend Developer</p>
+                    <p class="review__sub_title">“Sinthi has helped our business deliver incredible results, leading success for our UI & UX
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper, sapien sit amet scelerisque laoreet, eros justo congue neque”</p>
+                </div>
+              </div>
+        </div>
+
+        <!-- Blog & News -->
+        <div class="blogs_news" id="blog">
+            <h1 class="blogs_news__title">Blog & News</h1>
+            <div class="blogs">
+                <!-- Blog #1 -->
+                <div class="blog">
+                    <div class="blog__img">
+                        <img src="./images/blog/image_here-1.jpg" alt="img">
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__info">
+                            <div class="blog__info__text">
+                                <img src="./images/calendar.svg" alt="calendar">
+                                <p>09 Aug, 2021</p>
+                            </div>
+                            <div class="blog__info__text">
+                                <img src="./images/clock.svg" alt="clock">
+                                <p>3 Min Read</p>
+                            </div>
+                        </div>
+                        <h1 class="blog__title">Design Tips for Designers, That Cover Everything</h1>
+                    </div>
+                </div>
+                <!-- Blog #2 -->
+                <div class="blog">
+                    <div class="blog__img">
+                        <img src="./images/blog/image_here-2.jpg" alt="img">
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__info">
+                            <div class="blog__info__text">
+                                <img src="./images/calendar.svg" alt="calendar">
+                                <p>09 Aug, 2021</p>
+                            </div>
+                            <div class="blog__info__text">
+                                <img src="./images/clock.svg" alt="clock">
+                                <p>3 Min Read</p>
+                            </div>
+                        </div>
+                        <h1 class="blog__title">How to Build Rapport with Your Web Design Clients</h1>
+                    </div>
+                </div>
+                <!-- Blog #3 -->
+                <div class="blog">
+                    <div class="blog__img">
+                        <img src="./images/blog/image_here.jpg" alt="img">
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__info">
+                            <div class="blog__info__text">
+                                <img src="./images/calendar.svg" alt="calendar">
+                                <p>09 Aug, 2021</p>
+                            </div>
+                            <div class="blog__info__text">
+                                <img src="./images/clock.svg" alt="clock">
+                                <p>3 Min Read</p>
+                            </div>
+                        </div>
+                        <h1 class="blog__title">Top 6 Free Website Mockup Tools 2021</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact" id="contact">
+            <img src="./images/logo.svg" alt="logo">
+            <h1 class="contact__title">Lets Talk with Me!</h1>
+            <p class="sub_title">I am always open to discuss your project, improve your online presence or help with your UX/UI design</p>
+            <div class="contact__social">
+                <a href="#"><img src="./images/social/Fb.svg" alt="facebook"></a>
+                <a href="#"><img src="./images/social/Twitter.svg" alt="twitter"></a>
+                <a href="#"><img src="./images/social/Dribbble.svg" alt="dribble"></a>
+                <a href="#"><img src="./images/social/Linkedin.svg" alt="linkedin"></a>
+            </div>
+        </div>
+
+        <footer>
+    <p class="sub_title">Copyright © 2021 by Md Shamim Hossain. All Rights Reserved.</p>
+</footer>
     </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/main.min.js"></script>
 </body>
 </html>

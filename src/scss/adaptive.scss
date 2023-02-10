@@ -3,7 +3,7 @@
         nav{
             display: none;
         }
-        .header__btn{
+        .btn{
             display: none;
         }
         div.burger_menu{
@@ -99,6 +99,27 @@
 
         }
     }
+
+    div.reviews{
+        .single-item{
+            .review{
+                padding: 0 2%;
+                &__sub_title{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    div.blogs_news{
+        margin-top: 1rem;
+        .blogs{
+            flex-direction: column;
+            align-items: center;
+            .blog{
+                width: 60%; 
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 530px) {
@@ -145,6 +166,24 @@
                     } 
                 }
             }
+        }
+    }
+    div.blogs_news{
+        .blogs{
+            .blog{
+                width: 75%; 
+            }
+        }
+    }
+
+    div.contact{
+        .sub_title{
+            width: 70%;
+        }
+    }
+    footer{
+        .sub_title{
+            font-size: 0.8rem;
         }
     }
 }
